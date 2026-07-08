@@ -146,9 +146,9 @@ body{
   letter-spacing:.55em;
   font-size:clamp(11px,1.6vw,15px);
   color:var(--gold-soft);
-  margin-top:14px;
+  margin-top:0px;
 }
-.p-home .divider{ display:flex; align-items:center; gap:14px; margin:26px 0; width:min(360px,60vw); }
+.p-home .divider{ display:flex; align-items:center; gap:14px; margin:10px 0; width:min(360px,60vw); }
 .p-home .divider .line{ flex:1; height:1px; background:linear-gradient(to right, transparent, var(--gold-dim)); }
 .p-home .divider .line.r{ background:linear-gradient(to left, transparent, var(--gold-dim)); }
 .p-home .divider .diamond{ width:7px; height:7px; background:var(--gold); transform:rotate(45deg); }
