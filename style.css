@@ -280,3 +280,5 @@ body{
   .sheet{ transition-duration:.01s; }
 }
 .thankyou-msg{display: flex;flex-direction: column;align-items: center;justify-content: center;}
+
+.logo-img{ width: 160px; object-fit: cover;}
