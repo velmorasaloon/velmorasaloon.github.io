@@ -1,5 +1,5 @@
 (function(){
-  const roman = ['I','II','III','IV'];
+  const roman = ['I','II','III','IV','V','VI','VII','VIII','IX','X'];
   const sheets = Array.from(document.querySelectorAll('.sheet'));
   const total = sheets.length;
   let current = 0;
@@ -109,7 +109,9 @@
 
   function pointerMove(e){
     if(!dragging) return;
-    e.preventDefault && e.preventDefault();
+    if(!e.touches){
+        e.preventDefault();
+    }
     const x = e.touches ? e.touches[0].clientX : e.clientX;
     const deltaX = x - startX;
     let rotation;
