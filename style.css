@@ -282,3 +282,37 @@ body{
 .thankyou-msg{display: flex;flex-direction: column;align-items: center;justify-content: center;}
 
 .logo-img{ width: 160px; object-fit: cover;}
+@media (max-width:768px){
+
+    html,
+    body{
+        width:100%;
+        height:100%;
+        overflow:hidden;   /* Prevent body scrolling */
+    }
+
+    .book-shell{
+        height:calc(100vh - 110px);
+        padding:10px;
+        overflow:hidden;
+    }
+
+    .book{
+        width:100%;
+        height:100%;
+    }
+
+    .face{
+        overflow-y:auto;
+        overflow-x:hidden;
+        -webkit-overflow-scrolling:touch;
+        touch-action:pan-y;
+    }
+
+    .page-inner{
+        min-height:100%;
+        height:auto;
+        padding-bottom:80px;
+    }
+
+}
